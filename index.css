@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgb(8, 34, 45);
 }
 
 .navbar{
@@ -16,8 +17,15 @@ body{
     top: 0px;
 
 }
+.navbar h1:hover{
+    color: yellow;
+    cursor: pointer;
+    
+    
+}
+
 .navbar h1{
-    color:red;
+    color:whitesmoke;
     font-size: 50px;
     
     
@@ -33,12 +41,7 @@ body{
         font-family: "DM Serif Text", serif;
         font-weight: 400;
         font-style: italic;
-      
-      
-      
-      
-      
-    
+
 }
 .navbar ul {
     list-style: none;
@@ -62,6 +65,10 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 57px;
 }
+.div1 h1:hover{
+    color: yellow;
+    cursor: pointer;
+}
 .sec1{
     /* height: 300vh; */
     background-color: whitesmoke;
@@ -72,6 +79,7 @@ padding: 0px;
 box-sizing: border-box;
 align-items: center;
 
+
 }
  .div1 h1{
     
@@ -79,17 +87,39 @@ align-items: center;
       color: white;
     align-content: center;
  }
+ .sec1{
+    background-color: rgb(8, 34, 45);
+ }
+ .sec1 h1:hover{
+    transform: scale(1.5);
+    color: rgb(231, 58, 58);
+ }
+ .sec1 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
  .sec1 div{
-    border: 3px solid black;
+    border: 1px solid rgb(8, 34, 45);
     padding: 1PX;
     text-align: center;
-    background-color: wheat;
+    background-color:rgb(8, 34, 45);
+    color: whitesmoke;
  }
+
+ 
  .sec1 button{
     color: black;
-    background-color: wheat;
+    background-color: whitesmoke;
     border: 2px solid  black;
     border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+ }
+ .sec1 button:hover{
+    cursor: pointer;
+    width: 70%;
+    background-color:yellow ;
+    color:black;
  }
 
  .navbar label{
@@ -121,16 +151,24 @@ align-items: center;
     display: none;
  }
  .sec3{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(10,300px);
+    overflow: scroll;
+    scrollbar-width: none;
+
+   /* justify-content: space-evenly;*/
 padding-top: 80px;
-gap: 20px;
+gap: 50px;
 align-items: center;
+background-image: url(blue.jpg);
+color: whitesmoke;
  }
 
  
 .div31{
-    font-size: 50px;
+    font-size: 50pX;
+    gap: 0px;
+    
 }
 .div32{
     font-size: 50px;
@@ -145,8 +183,11 @@ align-items: center;
 .sec4{
     display: flex;
     justify-content: space-evenly;
-    background-color: papayawhip;
+    background-color: rgb(8, 34, 45);
     padding: 20px;
+    color: white;
+    
+    
 }
 .div41 button{
     color: black;
@@ -157,9 +198,16 @@ align-items: center;
    
 
 }
+.div41 button:hover{
+    cursor: pointer;
+    background-color: skyblue;
+
+}
 .div41{ 
     width: 300px;
     line-height:80px ;
+    
+    
 }
 .div42 button{
 background-color: skyblue;
@@ -168,6 +216,6 @@ padding: 10px;
 .sec5{
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: lightgray;
     padding: 20px;
 }
