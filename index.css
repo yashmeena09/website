@@ -20,14 +20,15 @@ body{
 .navbar h1:hover{
     color: yellow;
     cursor: pointer;
-    
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     
 }
 
 .navbar h1{
     color:whitesmoke;
     font-size: 50px;
-    
+    animation: royal 3s  ease infinite ;
+  
     
    /* font-family: "Tektur", sans-serif;
     font-optical-sizing: auto;
@@ -43,6 +44,23 @@ body{
         font-style: italic;
 
 }
+ @keyframes royal {
+    0%{
+        color: yellow;
+    }
+    25%{
+        color: rgb(94, 165, 194);
+    }
+    50%{
+        color: bisque;
+    }
+    75%{
+        color: chocolate;
+    }
+ }  
+
+
+
 .navbar ul {
     list-style: none;
     gap: 70px;
@@ -89,6 +107,7 @@ align-items: center;
  }
  .sec1{
     background-color: rgb(8, 34, 45);
+
  }
  .sec1 h1:hover{
     transform: scale(1.5);
@@ -104,6 +123,7 @@ align-items: center;
     text-align: center;
     background-color:rgb(8, 34, 45);
     color: whitesmoke;
+    overflow: hidden;  
  }
 
  
@@ -117,8 +137,8 @@ align-items: center;
  }
  .sec1 button:hover{
     cursor: pointer;
-    width: 70%;
-    background-color:yellow ;
+    width: 200px;
+    background-color:peachpuff;
     color:black;
  }
 
@@ -168,10 +188,20 @@ color: whitesmoke;
 .div31{
     font-size: 50pX;
     gap: 0px;
+    position: absolute;
+    left: 1%;
+    top: 1540px;
+    z-index: 10;
+    
     
 }
 .div32{
     font-size: 50px;
+    position: absolute;
+    left: 95%;
+    top: 1540px;
+    z-index: 10;
+
 }
 .font{
     font-size:30px ;
