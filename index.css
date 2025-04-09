@@ -52,10 +52,10 @@ body{
         color: rgb(94, 165, 194);
     }
     50%{
-        color: bisque;
+        color: rgb(231, 48, 48);
     }
     75%{
-        color: chocolate;
+        color:rgb(237, 177, 24);
     }
  }  
 
@@ -248,4 +248,72 @@ padding: 10px;
     justify-content: space-between;
     background-color: lightgray;
     padding: 20px;
+}
+
+.sec6{
+    background-image: url(get-i.webp);
+    height: 750px;
+align-items: center;   
+align-content: center; 
+
+}
+.sec6 h1{
+      color: aliceblue;
+      font-size: 100px;
+      padding: 120px;
+      /* padding-left: 50px;
+      padding-top:50px ;
+      padding-bottom: 200px;
+} */}
+.sec6 p{
+    color:whitesmoke;
+    font-size: 50px;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 100px;
+    
+}
+.sec6 button{
+    color: black;
+    background-color: aliceblue;
+    align-items:center ;
+    padding: 10px;
+    margin-left: 110px;
+    width: 200px;
+    font-size: larger;
+     
+}
+.sec6 button:hover{
+     cursor: pointer;
+     background-color: antiquewhite;
+}
+
+.sec7{
+    height: 700px;
+    animation: back 15s  ease infinite ;
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-size: cover;
+
+    
+}
+
+@keyframes back{
+    0%{
+        background-image: url(animation2.webp);
+    }
+    25%
+{
+    background-image: url(animation.webp);
+}
+50%{
+    background-image: url(animation3.jpg);
+
+}
+75%{
+    background-image: url(animation4.webp);
+}
+100%{
+    background-image: url(animation5.webp);
+}
 }
