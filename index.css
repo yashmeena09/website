@@ -290,30 +290,29 @@ align-content: center;
 
 .sec7{
     height: 700px;
-    animation: back 15s  ease infinite ;
+    animation: back 20s  ease infinite ;
     background-repeat: no-repeat;
     background-position:  center;
     background-size: cover;
-
     
 }
 
 @keyframes back{
     0%{
-        background-image: url(animation2.webp);
+        background-image: url(a1.jpg);
     }
     25%
 {
-    background-image: url(animation.webp);
+    background-image: url(a2.jpg);
 }
 50%{
-    background-image: url(animation3.jpg);
+    background-image: url(a4.jpg);
 
 }
 75%{
-    background-image: url(animation4.webp);
+    background-image: url(a5.jpg);
 }
 100%{
-    background-image: url(animation5.webp);
+    background-image: url(a6.jpg);
 }
 }
