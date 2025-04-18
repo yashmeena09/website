@@ -1,7 +1,9 @@
-body{
+html,body{
     margin: 0;
     background-color: rgb(8, 34, 45);
     overflow-x: hidden;
+     
+
 }
 
 .navbar{
@@ -69,7 +71,8 @@ body{
     list-style: none;
     gap: 70px;
     display: flex;
-    
+    padding-left:700px;
+
 }
 
 .parent{
@@ -90,6 +93,16 @@ body{
 }
 
 @media screen and (max-width: 900px) {
+    .navbar {
+        background-color:rgba(0, 0, 0, 0.358);
+    }
+    .navbar h1 {
+        font-size: x-large;
+
+    }
+    .navbar ul{
+        padding-left:200px ;
+    }
    .div1{
     color: whitesmoke;
     /* padding-top: 180px; */
@@ -134,6 +147,7 @@ width: 100%;
  .sec1 img:hover{
     transform: scale(1.1);
     cursor: pointer;
+    transition:0.5s ;
  }
  .sec1 div{
     border: 1px solid rgb(8, 34, 45);
@@ -142,6 +156,7 @@ width: 100%;
     background-color:rgb(8, 34, 45);
     color: whitesmoke;
     overflow: hidden;  
+
  }
 
  
@@ -161,25 +176,33 @@ width: 100%;
  }
 
  .navbar label{
-    display: none;
+    /* display: none; */
 }
-#click:checked~.navbar ul{
-    display: block;
+#click:checked~.parent .navbar ul{
+    display: flex;
 }
 
 @media screen and (max-width:650px) {
    
     .navbar label{
         display: block;
+        position: relative;
+        left: -90px;
     }
     .navbar ul{
         display: none;
         position: absolute;
         /* top: 55px; */
         width: 100%;
+        top: 100px;
     }
     .navbar ul li{
-        padding: 10px;
+        padding: 5px;
+     
+    }
+    .navbar ul li i{
+        font-size: 20px;
+        text-align: center;
     }
  }
  #click{
@@ -191,8 +214,7 @@ width: 100%;
     overflow: scroll;
     scrollbar-width: none;
     width: 100%;
-
-   /* justify-content: space-evenly;*/
+           /* justify-content: space-evenly;*/
 padding-top: 80px;
 gap: 50px;
 align-items: center;
@@ -262,7 +284,7 @@ padding: 10px;
 .sec5{
     display: flex;
     justify-content: space-between;
-    background-color:  rgba(7, 56, 77, 0.647);
+    background-color:  rgba(6, 49, 68, 0.647);
     padding: 20px;
     color: aliceblue;
     width: 100%;
@@ -361,7 +383,9 @@ width: 100%;
     
     padding-bottom: 100px;
     border-radius: 5px; 
-    box-shadow: 2px 0px 1px whitesmoke;*/
+    /*box-shadow: 2px 0px 1px whitesmoke;*/
+    box-shadow: 5px 10px 15px whitesmoke ;
+
 height: 450px;
 width: 700px;
     
@@ -372,10 +396,13 @@ width: 700px;
     font-family: "Amarante";
     font-weight: 400;
     line-height: 40px;
-    
-  
+}
+.sec8 div p{
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
 
-  
+    
 }
 .sec8 div img{
     height:300px;
@@ -420,4 +447,13 @@ font-family: vardana;
     transform: scale(1.02);
     overflow: hidden;
     transform: 4s;
+}
+@media screen  and (max-width:650px)  {
+    .sec8{
+        display: inline;
+    }
+   .sec4{
+     gap: 20px;
+   } 
+
 }
